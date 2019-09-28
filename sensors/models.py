@@ -4,8 +4,6 @@ from django.db import models
 class ApiKey(models.Model):
     api_key = models.CharField(max_length=50)
 
-class Test(models.Model):
-    api_key = models.CharField(max_length=50)
 
 class Temperature(models.Model):
     temperature = models.DecimalField(decimal_places=2, max_digits=5)
